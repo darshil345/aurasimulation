@@ -59,6 +59,19 @@ pip install -r requirements-voice.txt
 python3 main.py
 ```
 
+## GitHub Pages Note
+
+GitHub Pages serves static web content.  
+This project is a desktop Python + Pygame simulation, so it does not auto-run directly inside a GitHub web page.
+
+To view the full simulation:
+
+```bash
+python3 main.py
+```
+
+If you want, the next upgrade step is a browser build pipeline (PyGBag/WebAssembly) so visitors can run a web demo.
+
 ## Future Scope
 
 - Integrate with real robot hardware
@@ -66,4 +79,3 @@ python3 main.py
 - Mobile app and caregiver dashboard integration
 - Smart-home device connectivity
 - Advanced multi-room and multi-agent coordination
-

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AURA Simulation</title>
+    <style>
+      :root {
+        --bg: #f3f6fb;
+        --card: #ffffff;
+        --text: #1f2a3a;
+        --muted: #4f6178;
+        --primary: #2563eb;
+        --accent: #0ea5a4;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: radial-gradient(1200px 700px at 20% -20%, #dbeafe, transparent), var(--bg);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 40px auto;
+        padding: 0 18px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 26px;
+        box-shadow: 0 16px 35px rgba(31, 42, 58, 0.12);
+      }
+      h1 { margin: 0; font-size: 2rem; }
+      p { color: var(--muted); line-height: 1.55; }
+      .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px 14px;
+        font-weight: 600;
+      }
+      .btn.primary { background: var(--primary); color: #fff; }
+      .btn.secondary { background: #e7eefb; color: #1e3a8a; }
+      .note {
+        margin-top: 18px;
+        padding: 12px 14px;
+        border-left: 4px solid var(--accent);
+        background: #ecfeff;
+        border-radius: 8px;
+      }
+      pre {
+        background: #0f172a;
+        color: #dbeafe;
+        padding: 12px;
+        border-radius: 10px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>AURA Simulation</h1>
+        <p>
+          AI-powered elderly assistance robot simulation built with Python and Pygame.
+        </p>
+
+        <div class="note">
+          GitHub Pages can host static pages, but this simulation is a desktop Python app.
+          To run the robot simulation, launch it locally.
+        </div>
+
+        <h3>Run Locally</h3>
+        <pre><code>git clone https://github.com/darshil345/aurasimulation.git
+cd aurasimulation
+pip install -r requirements.txt
+python3 main.py</code></pre>
+
+        <div class="row">
+          <a class="btn primary" href="https://github.com/darshil345/aurasimulation" target="_blank" rel="noreferrer">Open Repository</a>
+          <a class="btn secondary" href="https://github.com/darshil345/aurasimulation/blob/main/README.md" target="_blank" rel="noreferrer">Read Documentation</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
