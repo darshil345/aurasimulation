@@ -1,0 +1,10 @@
+# Voice control dependencies (install this for microphone + speech-to-text).
+SpeechRecognition>=3.10
+sounddevice>=0.5
+numpy>=1.24
+
+# Optional (better microphone backend if you have PortAudio installed):
+# PyAudio>=0.2.14
+
+# Optional (text-to-speech):
+# pyttsx3>=2.90
